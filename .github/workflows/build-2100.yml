@@ -1,4 +1,4 @@
-name: Build WR1200JS (USB)
+name: Build WR1200JS
 
 on: 
   release:
@@ -35,7 +35,7 @@ jobs:
         mkdir -p /opt/images/
     - name: Build Firmware
       env:
-        TNAME: "WR1200JS (USB)"
+        TNAME: "WR1200JS"
       run: |
         cwd=`pwd`
         CONFIG_TOOLCHAIN_DIR=${cwd//\//\\\/}\\/toolchain-mipsel
